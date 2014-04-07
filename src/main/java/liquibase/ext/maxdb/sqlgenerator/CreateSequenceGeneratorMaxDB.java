@@ -22,7 +22,7 @@ public class CreateSequenceGeneratorMaxDB extends CreateSequenceGenerator {
     public ValidationErrors validate(CreateSequenceStatement alterSequenceStatement, Database database, SqlGeneratorChain sqlGeneratorChain) {
         ValidationErrors errors = super.validate(alterSequenceStatement, database, sqlGeneratorChain);
 
-        errors.checkDisallowedField("ordered", alterSequenceStatement.getOrdered(), database, liquibase.database.core.MaxDBDatabase.class);
+        errors.checkDisallowedField("ordered", alterSequenceStatement.getOrdered(), database, liquibase.ext.maxdb.database.MaxDBDatabase.class);
 
         return errors;
     }

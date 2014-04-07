@@ -1,16 +1,12 @@
 package liquibase.ext.maxdb.sqlgenerator;
 
 import liquibase.database.Database;
-import liquibase.sqlgenerator.core.AddDefaultValueGenerator;
-import liquibase.structure.core.Schema;
 import liquibase.datatype.DataTypeFactory;
-import liquibase.database.core.MaxDBDatabase;
-import liquibase.structure.core.Column;
-import liquibase.structure.core.Table;
+import liquibase.ext.maxdb.database.MaxDBDatabase;
 import liquibase.sql.Sql;
 import liquibase.sql.UnparsedSql;
-import liquibase.sqlgenerator.SqlGenerator;
 import liquibase.sqlgenerator.SqlGeneratorChain;
+import liquibase.sqlgenerator.core.AddDefaultValueGenerator;
 import liquibase.statement.core.AddDefaultValueStatement;
 
 public class AddDefaultValueGeneratorMaxDB extends AddDefaultValueGenerator {

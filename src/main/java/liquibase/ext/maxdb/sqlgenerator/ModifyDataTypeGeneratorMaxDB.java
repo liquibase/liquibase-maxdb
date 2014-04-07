@@ -16,12 +16,13 @@ public class ModifyDataTypeGeneratorMaxDB extends ModifyDataTypeGenerator {
         return PRIORITY_DATABASE;
     }
 
-    @Override
+
+//    @Override
     protected String getModifyString(Database database) {
         return "MODIFY";
     }
 
-    @Override
+//    @Override
     protected String getPreDataTypeString(Database database) {
         return " ";
     }

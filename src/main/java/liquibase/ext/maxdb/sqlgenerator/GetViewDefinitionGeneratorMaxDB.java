@@ -2,7 +2,7 @@ package liquibase.ext.maxdb.sqlgenerator;
 
 import liquibase.CatalogAndSchema;
 import liquibase.database.Database;
-import liquibase.database.core.MaxDBDatabase;
+import liquibase.ext.maxdb.database.MaxDBDatabase;
 import liquibase.sql.Sql;
 import liquibase.sql.UnparsedSql;
 import liquibase.sqlgenerator.SqlGeneratorChain;
