@@ -88,6 +88,11 @@ public class MaxDBDatabase extends AbstractJdbcDatabase {
     }
 
     @Override
+    public boolean supportsSchemas() {
+        return false;
+    }
+
+    @Override
     public int getPriority() {
         return PRIORITY_DEFAULT;
     }
