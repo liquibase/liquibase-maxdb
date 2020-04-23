@@ -1,0 +1,13 @@
+liquibase.ext.maxdb.sqlgenerator.AddDefaultValueGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.AlterSequenceGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.CreateSequenceGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.DropDefaultValueGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.DropForeignKeyConstraintGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.DropIndexGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.DropUniqueConstraintGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.GetViewDefinitionGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.ModifyDataTypeGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.RenameColumnGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.RenameTableGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.RenameViewGeneratorMaxDB
+liquibase.ext.maxdb.sqlgenerator.SetNullableGeneratorMaxDB
