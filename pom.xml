@@ -4,7 +4,7 @@
 
 	<groupId>org.liquibase.ext</groupId>
 	<artifactId>liquibase-maxdb</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>3.10.1</version>
 
 	<name>Liquibase Extension: MaxDB Support</name>
 	<description>Adds support for SAP's MaxDB</description>
@@ -29,7 +29,8 @@
 	<scm>
 		<connection>scm:git:http://github.com/liquibase/liquibase-maxdb.git</connection>
 		<url>https://github.com/liquibase/liquibase-maxdb</url>
-	</scm>
+	  <tag>liquibase-maxdb-3.10.1</tag>
+  </scm>
 
 	<developers>
 		<developer>
