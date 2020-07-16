@@ -1,0 +1,5 @@
+liquibase.ext.maxdb.datatype.BigIntTypeMaxDb
+liquibase.ext.maxdb.datatype.BlobTypeMaxDB
+liquibase.ext.maxdb.datatype.ClobTypeMaxDB
+liquibase.ext.maxdb.datatype.CurrencyTypeMaxDB
+liquibase.ext.maxdb.datatype.DateTimeTypeMaxDB
