@@ -1,4 +1,4 @@
-# Liquibase MaxDB Extension 
+# Liquibase MaxDB Extension [![Build and Test Extension](https://github.com/liquibase/liquibase-maxdb/actions/workflows/build.yml/badge.svg)](https://github.com/liquibase/liquibase-maxdb/actions/workflows/build.yml)
 
 This is a Liquibase extension for MaxDB support.
 
