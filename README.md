@@ -6,7 +6,7 @@ This is a Liquibase extension for MaxDB support.
 
 ## Configuring the extension
 
-These instructions will help you get the extension up and running on your local machine for development and testing purposes.  This extension has a pre requisite of Liquibase core in order to use it.  Liquibase core can be found at https://www.liquibase.org/download
+These instructions will help you get the extension up and running on your local machine for development and testing purposes. This extension has a prerequisite of Liquibase core in order to use it. Liquibase core can be found at https://www.liquibase.org/download.
 
 ### Liquibase CLI
 
@@ -61,6 +61,10 @@ Once you have created a PR for this extension you can find the artifact for your
 ## Documentation
 
 [Using Liquibase with MaxDB](https://docs.liquibase.com/workflows/database-setup-tutorials/maxdb.html)
+
+## Issue Tracking
+
+Any issues can be logged in the [Github issue tracker](https://github.com/liquibase/liquibase-maxdb/issues).
 
 ## License
 
