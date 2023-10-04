@@ -3,6 +3,8 @@ package liquibase.ext.maxdb.snapshot;
 import liquibase.database.Database;
 import liquibase.ext.maxdb.database.MaxDBDatabase;
 import liquibase.snapshot.jvm.SequenceSnapshotGenerator;
+import liquibase.statement.SqlStatement;
+import liquibase.statement.core.RawSqlStatement;
 import liquibase.structure.DatabaseObject;
 import liquibase.structure.core.Schema;
 
@@ -17,7 +19,10 @@ public class SequenceSnapshotGeneratorMaxDB extends SequenceSnapshotGenerator {
     }
 
     @Override
-    protected String getSelectSequenceSql(Schema schema, Database database) {
-        return "SELECT SEQUENCE_NAME FROM DOMAIN.SEQUENCES WHERE OWNER = '" + schema.getName() + "'";
+    protected SqlStatement getSelectSequenceStatement(Schema schema, Database database) {
+        if (database instanceof MaxDBDatabase) {
+            return new RawSqlStatement("SELECT SEQUENCE_NAME FROM DOMAIN.SEQUENCES WHERE OWNER = '" + schema.getName() + "'");
+        }
+        return super.getSelectSequenceStatement(schema, database);
     }
 }
