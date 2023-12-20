@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-test:
-    uses: liquibase/build-logic/.github/workflows/os-extension-test.yml@v0.5.8
+    uses: liquibase/build-logic/.github/workflows/os-extension-test.yml@v0.5.9
     secrets: inherit
 
   integration-test:
@@ -33,7 +33,7 @@ jobs:
           cache: 'maven'
 
       - name: Build Cache
-        uses: actions/cache@v3.0.5
+        uses: actions/cache@v3.3.2
         with:
           key: build-${{ github.run_number }}-${{ github.run_attempt }}
           path: |
@@ -54,5 +54,5 @@ jobs:
 
   dependabot-automerge:
     needs: build-test
-    uses: liquibase/build-logic/.github/workflows/dependabot-automerge.yml@v0.5.8
+    uses: liquibase/build-logic/.github/workflows/dependabot-automerge.yml@v0.5.9
     secrets: inherit
