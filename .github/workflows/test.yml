@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  
+
 jobs:
 
   authorize:
@@ -26,6 +26,7 @@ jobs:
     secrets: inherit
 
   integration-test:
+    needs: authorize
     name: Test Harness for Maxdb ${{ matrix.maxdb }}
     runs-on: ubuntu-latest
 
