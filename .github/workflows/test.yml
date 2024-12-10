@@ -66,6 +66,6 @@ jobs:
             **/target/jacoco.exec
 
   dependabot-automerge:
-    needs: build-test
+    needs: integration-test
     uses: liquibase/build-logic/.github/workflows/dependabot-automerge.yml@main
     secrets: inherit
