@@ -25,6 +25,6 @@ jobs:
     secrets: inherit
 
   dependabot-automerge:
-    needs: integration-test
+    needs: build-test
     uses: liquibase/build-logic/.github/workflows/dependabot-automerge.yml@main
     secrets: inherit
